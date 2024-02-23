@@ -5,3 +5,5 @@ services:
       - ./wireguard/wg:/root/wg
     cap_add:
       - NET_ADMIN
+    ports:
+      - "51820:51820"
