@@ -1,0 +1,7 @@
+services:
+  vpn:
+    build: ./wireguard
+    volumes:
+      - ./wireguard/wg:/root/wg
+    cap_add:
+      - NET_ADMIN
