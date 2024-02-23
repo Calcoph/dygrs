@@ -16,9 +16,7 @@ COPY ./01-network-manager-all.yaml /etc/netplan/01-network-manager-all.yaml
 COPY ./sysctl.conf /etc/sysctl.conf
 
 RUN sysctl -p
-RUN wg-quick up wg0
-RUN wg set wg0 peer 6qqU0B3TZgy6refy/T0vlxJtLmupSKzDIKV2cgz0zE4= allowed-ips 10.8.0.2,10.8.0.100
 
 WORKDIR /root/wg
 
-CMD sleep infinity
+CMD wg-quick up wg0 && wg set wg0 peer 6qqU0B3TZgy6refy/T0vlxJtLmupSKzDIKV2cgz0zE4= allowed-ips 10.8.0.2,10.8.0.100 && sleep infinity
