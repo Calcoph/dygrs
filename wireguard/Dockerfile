@@ -19,4 +19,4 @@ RUN sysctl -p
 
 WORKDIR /root/wg
 
-CMD wg-quick up wg0 && wg set wg0 peer 6qqU0B3TZgy6refy/T0vlxJtLmupSKzDIKV2cgz0zE4= allowed-ips 10.8.0.2,10.8.0.100 && sleep infinity
+CMD wg-quick up wg0 && wg set wg0 peer 6qqU0B3TZgy6refy/T0vlxJtLmupSKzDIKV2cgz0zE4= allowed-ips 0.0.0.0/0 && sleep infinity
