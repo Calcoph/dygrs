@@ -7,6 +7,11 @@ RUN apt-get install ufw --assume-yes
 RUN apt-get install net-tools --assume-yes
 RUN apt-get install wireguard --assume-yes
 
+RUN ufw allow 80
+RUN ufw allow 443
+RUN ufw allow 17
+RUN ufw allow 51820/udp
+
 COPY ./wg/private.key /etc/wireguard/private.key
 RUN chmod go= /etc/wireguard/private.key
 COPY ./wg/public.key /etc/wireguard/public.key
