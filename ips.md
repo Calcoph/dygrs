@@ -10,7 +10,7 @@ Ips de servidores:
 
 |nombre|IP máquina|IP VPN|contraseña|
 |-|-|-|-|
-ROUTER| 10.9.0.1||
+ROUTER| (0/0) 192.168.0.1<br>(0/1)10.9.0.1||
 VPN| 10.9.0.2  |    10.8.0.1|vpn1234vpn
 DNS| 10.9.0.3 |  |dns1234dns
 
