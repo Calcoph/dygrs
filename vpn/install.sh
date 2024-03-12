@@ -10,5 +10,4 @@ sudo cp openvpn-ca/pki/issued/server.crt /etc/openvpn
 sudo cp openvpn-ca/pki/private/server.key /etc/openvpn
 sudo cp server.conf /etc/openvpn/server.conf
 sudo cp sysctl.conf /etc/sysctl.conf
-sudo cp client.conf openvpn-ca
 sysctl -p
