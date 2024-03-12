@@ -6,8 +6,8 @@ sudo cat \
 sudo cp openvpn-ca/pki/ca.crt /etc/openvpn
 sudo cp openvpn-ca/pki/dh.pem /etc/openvpn
 sudo cp openvpn-ca/pki/ta.key /etc/openvpn
-sudo cp openvpn-ca/pki/issued/server.crt /erc/openvpn
-sudo cp openvpn-ca/pki/private/server.key /erc/openvpn
+sudo cp openvpn-ca/pki/issued/server.crt /etc/openvpn
+sudo cp openvpn-ca/pki/private/server.key /etc/openvpn
 sudo cp server.conf /etc/openvpn/server.conf
 sudo cp sysctl.conf /etc/sysctl.conf
 sudo cp client.conf openvpn-ca
