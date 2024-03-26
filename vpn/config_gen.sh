@@ -1,8 +1,8 @@
 #!/bin/bash
 # First argument: Client identifier
 KEY_DIR=/etc/openvpn/client
-OUTPUT_DIR=~
-BASE_CONFIG=~/openvpn-ca/client.conf
+OUTPUT_DIR=/home/vpn
+BASE_CONFIG=/home/vpn/openvpn-ca/client.conf
 cat ${BASE_CONFIG} \
     <(echo -e '<ca>') \
     ${KEY_DIR}/ca.crt \
